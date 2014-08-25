@@ -8,6 +8,9 @@ init:
 test: build
 	cabal test --test-option=--color
 
+specs: build
+	./dist/build/orc-specs/orc-specs
+
 run:
 	cabal run
 
@@ -44,4 +47,4 @@ build:
 
 rebuild: clean configure build
 
-.PHONY: all init test run clean distclean configure deps build rebuild
+.PHONY: all init test run clean distclean configure deps build rebuild specs
