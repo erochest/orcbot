@@ -39,7 +39,7 @@ configure: clean
 	cabal configure --enable-tests
 
 deps: clean
-	cabal install --only-dependencies --allow-newer --enable-tests
+	cabal install --only-dependencies --enable-tests
 	cabal configure --enable-tests
 
 build:
