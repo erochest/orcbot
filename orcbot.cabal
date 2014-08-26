@@ -24,7 +24,6 @@ executable orc
                      , plugins
                      , sodium
                      , snap
-                     , ekg
                      , text
                      , orchestrate
                      , free
@@ -33,7 +32,8 @@ executable orc
                      , rest-snap
                      , configurator
                      , irc
-                     , lens
+                     , lens >=4.3 && <4.4
+                     , errors
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
