@@ -4,5 +4,10 @@
 module Main where
 
 
+import Options.Applicative
+
+import OrcBot.Options
+
+
 main :: IO ()
-main = undefined
+main = print =<< execParser args

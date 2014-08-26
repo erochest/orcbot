@@ -17,9 +17,13 @@ cabal-version:       >=1.10
 
 executable orc
   main-is:             Main.hs
-  -- other-modules:       
+  other-modules:       OrcBot.Options
+                     , OrcBot.Types
+                     , Paths_orcbot
   -- other-extensions:    
   build-depends:       base >=4.7 && <4.8
+                     , configurator
+                     , optparse-applicative
                      , text
                      , plugins
                      , sodium
@@ -34,7 +38,7 @@ executable orc
                      , irc
                      , lens >=4.3 && <4.4
                      , errors
-  -- hs-source-dirs:      
+  hs-source-dirs:      ./src, .
   default-language:    Haskell2010
 
 test-suite orc-specs
