@@ -21,22 +21,16 @@ executable orc
                      , OrcBot.Types
                      , Paths_orcbot
   -- other-extensions:    
-  build-depends:       base >=4.7 && <4.8
+  build-depends:       base >=4.7 && <5
                      , optparse-applicative
                      , text
-                     , plugins
                      , sodium
-                     , snap
                      , text
-                     , orchestrate
                      , free
-                     , rest-core
-                     , rest-types
-                     , rest-snap
                      , configurator
-                     , irc
-                     , lens >=4.3 && <4.4
+                     , lens
                      , errors
+                     , network
                      , network-uri
                      , transformers
                      , mtl
@@ -48,7 +42,7 @@ test-suite orc-specs
   ghc-options:         -threaded -rtsopts
   hs-source-dirs:      specs
   main-is:             Specs.hs
-  build-depends:         base       == 4.7.*
+  build-depends:         base
                        , QuickCheck
                        , smallcheck
                        , hspec
